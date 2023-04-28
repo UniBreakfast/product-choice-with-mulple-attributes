@@ -8,7 +8,7 @@ function fillVariationSelect(variations) {
   for (const variation of variations) {
     const option = document.createElement('option')
     option.value = JSON.stringify(variation)
-    option.textContent = JSON.stringify(variation).replace(/[{}"]/g, '').replace(/([:,])/g, '$1 ')
+    option.textContent = Object.values(variation).join(' ')
     variationSelect.appendChild(option)
   }
 }

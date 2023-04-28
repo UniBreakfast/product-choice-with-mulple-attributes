@@ -22,3 +22,7 @@
   display: flex;
   gap: 20px;
 }
+
+.product fieldset label:has(>:disabled) {
+  opacity: 0.3;
+}

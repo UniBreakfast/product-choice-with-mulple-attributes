@@ -12,7 +12,9 @@ const product = {
   ],
 }
 
-fillVariations(0.4)
+fillVariations(0.1)
+
+product.attributes[2].values.push('wood')
 
 function fillVariations(probability = 0.5) {
   const { attributes, variations } = product
